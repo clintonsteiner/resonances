@@ -1,7 +1,8 @@
 ---
 title: "Welcome"
 ---
-[Download Resonances v7 PDF](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269)
+[Mirror Download Resonances v7 PDF](Resonances-v7.pdf)
+[Slow Source Download Resonances v7 PDF](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269)
 
 ## Unit 1
 
