@@ -6,23 +6,6 @@ theme = ["book"]
 enableInlineShortcodes = true
 ignoreLogs = ['warning-goldmark-raw-html']
 
-[caches]
-  [caches.getjson]
-    dir    = ":cacheDir/:project"
-    maxAge = -1
-  [caches.getcsv]
-    dir    = ":cacheDir/:project"
-    maxAge = -1
-  [caches.images]
-    dir    = ":cacheDir/images"
-    maxAge = "1440h"
-  [caches.assets]
-    dir    = ":resourceDir/_gen"
-    maxAge = -1
-  [caches.getresource]
-    dir = ":cacheDir/:project"
-    maxage = '1h'
-
 [params]
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
