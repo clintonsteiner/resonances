@@ -9,4 +9,3 @@ title: "Unit 1: Music as a Field of Practice and Study"
 ## The Elements of Music
 
 {{< pdf_paged src=".././Unit1_Chapter2_The_Elements_of_Music.pdf" id="2" >}}
-

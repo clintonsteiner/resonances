@@ -9,4 +9,3 @@ title: "Unit 4: Music for Political Expression"
 ## Support and Protest
 
 {{< pdf_paged src=".././Unit4_Chapter10_Support_and_Protest.pdf" id="2" >}}
-

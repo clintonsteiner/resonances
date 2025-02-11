@@ -13,4 +13,3 @@ title: "Appendices"
 ## Definition of Terms
 
 {{< pdf_paged src=".././Appendices_Definition_of_Terms.pdf" id="3" >}}
-

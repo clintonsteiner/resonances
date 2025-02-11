@@ -9,4 +9,3 @@ title: "Unit 3: Music for Entertainment"
 ## Listening at Home and at Court Introduction
 
 {{< pdf_paged src=".././Unit3_Chapter8_Listening_at_Home_and_at_Court_Introduction.pdf" id="2" >}}
-
