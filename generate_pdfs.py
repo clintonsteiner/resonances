@@ -21,7 +21,7 @@ def split_pdf(input_pdf, output_folder, ranges):
         print(f"Created: {output_pdf_path}")
 
 
-input_pdf = os.path.join('static', 'Resonances-v7.pdf')
+input_pdf = os.path.join('static', 'resonance-v7.pdf')
 output_folder = os.path.join('static', 'split_pdfs')
 os.makedirs(output_folder, exist_ok=True)
 ranges = {
