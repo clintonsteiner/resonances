@@ -1,6 +1,6 @@
-<div id="pdf-container-{{ .Get "id" }}" style="display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: {{ .Get "width" | default "100%" }}; margin: 0 auto; overflow: hidden;">
+<div id="pdf-container-{{ .Get "id" }}" style="display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: {{ .Get "width" | default "90%" }}; margin: 0 auto; overflow: hidden;">
     <!-- PDF Viewer -->
-    <div style="position: relative; width: 100%; height: {{ .Get "height" | default "600px" }}; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
+    <div style="position: relative; width: 100%; height: {{ .Get "height" | default "800px" }}; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
         <iframe 
             id="pdf-frame-{{ .Get "id" }}" 
             src="{{ .Get "src" }}#page={{ .Get "page" | default "1" }}" 
