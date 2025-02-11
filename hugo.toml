@@ -14,5 +14,4 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
   # (Optional, default none) Set the path to a logo for the book. If the logo is
   # /static/logo.png then the path would be 'logo.png'
-  BookSection = '*'
   BookDateFormat = 'Jan 2, 2006'
