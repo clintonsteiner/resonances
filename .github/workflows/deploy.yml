@@ -27,6 +27,13 @@ jobs:
       - name: Build site
         run: hugo --minify
 
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-docs
+          path: public/
+
+
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
