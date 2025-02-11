@@ -27,6 +27,17 @@
         
     
 
+    
+    
+        
+            
+            
+                Search
+            
+        
+        
+    
+
 
 
 
@@ -55,6 +66,17 @@
         
     
 
+    
+    
+        
+            
+            
+                Search
+            
+        
+        
+    
+
 
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
@@ -62,7 +84,7 @@
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://clintonsteiner.github.io/resonances/unit_5/">
   <meta property="og:site_name" content="Resonance textbook fast hosting">
   <meta property="og:title" content="Unit 5: Functional Music">
-  <meta property="og:description" content="Music for Spiritual Expression # Previous Page Page 1 Next Page Music for Moving # Previous Page Page 1 Next Page">
+  <meta property="og:description" content="Music for Spiritual Expression # Previous Page Page 1 Next Page Search Music for Moving # Previous Page Page 1 Next Page Search">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 <title>Unit 5: Functional Music | Resonance textbook fast hosting</title>
@@ -71,7 +93,7 @@
 <link rel="canonical" href="https://clintonsteiner.github.io/resonances/unit_5/">
 <link rel="stylesheet" href="/resonances/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/resonances/fuse.min.js"></script>
-  <script defer src="/resonances/en.search.min.0dcd480da46da1ef7c2ea6e08d3d2173910d358472020d7eb1969be8e383f0e0.js" integrity="sha256-Dc1IDaRtoe98LqbgjT0hc5ENNYRyAg1&#43;sZab6OOD8OA=" crossorigin="anonymous"></script>
+  <script defer src="/resonances/en.search.min.ff15ad97f414fae49c47abcb2c893ca612bdc26ec4bde8acf79575532156e0b3.js" integrity="sha256-/xWtl/QU&#43;uScR6vLLIk8phK9wm7Eveis95V1UyFW4LM=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://clintonsteiner.github.io/resonances/unit_5/index.xml" title="Resonance textbook fast hosting" />
 <!--
 Made with Book Theme
@@ -180,9 +202,9 @@ https://github.com/alex-shpak/hugo-book
   Music for Spiritual Expression
   <a class="anchor" href="#music-for-spiritual-expression">#</a>
 </h2>
-<div id="pdf-container-1" style="display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 90%; margin: 0 auto; overflow: hidden;">
+<div id="pdf-container-1" style="display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 100%; margin: 0 auto; overflow: hidden;">
     
-    <div style="position: relative; width: 100%; height: 800px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
+    <div style="position: relative; width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
         <iframe 
             id="pdf-frame-1" 
             src=".././Unit5_Chapter11_Music_for_Spiritual_Expression.pdf#page=1" 
@@ -210,17 +232,37 @@ https://github.com/alex-shpak/hugo-book
             Next Page
         </button>
     </div>
+
+    
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 10px; width: 100%;">
+        <div style="display: flex; justify-content: center; gap: 10px; width: 100%;">
+            <input 
+                id="search-text-1" 
+                type="text" 
+                placeholder="Search text..." 
+                style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px; width: 200px;">
+            <button 
+                id="search-button-1" 
+                style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
+                Search
+            </button>
+        </div>
+        <ul id="search-results-1" style="list-style: none; padding: 0; margin: 0; width: 100%; max-height: 200px; overflow-y: auto; border: 1px solid #ccc; border-radius: 4px;"></ul>
+    </div>
 </div>
 
 <script>
-    
     async function setupPdfNavigation(pdfUrl, containerId) {
         const iframe = document.getElementById(`pdf-frame-${containerId}`);
         const prevButton = document.getElementById(`prev-page-${containerId}`);
         const nextButton = document.getElementById(`next-page-${containerId}`);
         const pageInfo = document.getElementById(`page-info-${containerId}`);
+        const searchInput = document.getElementById(`search-text-${containerId}`);
+        const searchButton = document.getElementById(`search-button-${containerId}`);
+        const searchResultsList = document.getElementById(`search-results-${containerId}`);
         let currentPage = 1;
         let totalPages = 1;
+        let pdfInstance;
 
         if (typeof pdfjsLib === 'undefined') {
             const script = document.createElement('script');
@@ -230,34 +272,70 @@ https://github.com/alex-shpak/hugo-book
         }
 
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
-        const pdf = await pdfjsLib.getDocument(pdfUrl).promise;
-        totalPages = pdf.numPages;
+        pdfInstance = await pdfjsLib.getDocument(pdfUrl).promise;
+        totalPages = pdfInstance.numPages;
 
         
-        function updatePage() {
-            iframe.src = `${pdfUrl}#page=${currentPage}`;
-            pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
-            prevButton.disabled = currentPage === 1;
-            nextButton.disabled = currentPage === totalPages;
+        function updatePage(page) {
+            iframe.src = `${pdfUrl}#page=${page}`;
+            pageInfo.textContent = `Page ${page} of ${totalPages}`;
+            prevButton.disabled = page === 1;
+            nextButton.disabled = page === totalPages;
         }
 
         
         prevButton.addEventListener('click', () => {
             if (currentPage > 1) {
                 currentPage--;
-                updatePage();
+                updatePage(currentPage);
             }
         });
 
         nextButton.addEventListener('click', () => {
             if (currentPage < totalPages) {
                 currentPage++;
-                updatePage();
+                updatePage(currentPage);
             }
         });
 
         
-        updatePage();
+        searchButton.addEventListener('click', async () => {
+            const searchText = searchInput.value.trim();
+            if (!searchText) return;
+
+            searchResultsList.innerHTML = ''; 
+            for (let i = 1; i <= totalPages; i++) {
+                const page = await pdfInstance.getPage(i);
+                const textContent = await page.getTextContent();
+                const textItems = textContent.items.map(item => item.str).join(" ");
+
+                if (textItems.toLowerCase().includes(searchText.toLowerCase())) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `Page ${i}: ${textItems.substring(0, 100)}...`;
+                    listItem.style.cursor = 'pointer';
+                    listItem.style.padding = '10px';
+                    listItem.style.borderBottom = '1px solid #ccc';
+
+                    listItem.addEventListener('click', () => {
+                        currentPage = i;
+                        updatePage(currentPage);
+                    });
+
+                    searchResultsList.appendChild(listItem);
+                }
+            }
+
+            if (searchResultsList.childNodes.length === 0) {
+                const noResultsItem = document.createElement('li');
+                noResultsItem.textContent = 'No matches found.';
+                noResultsItem.style.padding = '10px';
+                noResultsItem.style.textAlign = 'center';
+                searchResultsList.appendChild(noResultsItem);
+            }
+        });
+
+        
+        updatePage(currentPage);
     }
 
     
@@ -269,9 +347,9 @@ https://github.com/alex-shpak/hugo-book
   Music for Moving
   <a class="anchor" href="#music-for-moving">#</a>
 </h2>
-<div id="pdf-container-2" style="display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 90%; margin: 0 auto; overflow: hidden;">
+<div id="pdf-container-2" style="display: flex; flex-direction: column; align-items: center; gap: 10px; max-width: 100%; margin: 0 auto; overflow: hidden;">
     
-    <div style="position: relative; width: 100%; height: 800px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
+    <div style="position: relative; width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); overflow: hidden;">
         <iframe 
             id="pdf-frame-2" 
             src=".././Unit5_Chapter12_Music_for_Moving.pdf#page=1" 
@@ -299,17 +377,37 @@ https://github.com/alex-shpak/hugo-book
             Next Page
         </button>
     </div>
+
+    
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-top: 10px; width: 100%;">
+        <div style="display: flex; justify-content: center; gap: 10px; width: 100%;">
+            <input 
+                id="search-text-2" 
+                type="text" 
+                placeholder="Search text..." 
+                style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 4px; width: 200px;">
+            <button 
+                id="search-button-2" 
+                style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
+                Search
+            </button>
+        </div>
+        <ul id="search-results-2" style="list-style: none; padding: 0; margin: 0; width: 100%; max-height: 200px; overflow-y: auto; border: 1px solid #ccc; border-radius: 4px;"></ul>
+    </div>
 </div>
 
 <script>
-    
     async function setupPdfNavigation(pdfUrl, containerId) {
         const iframe = document.getElementById(`pdf-frame-${containerId}`);
         const prevButton = document.getElementById(`prev-page-${containerId}`);
         const nextButton = document.getElementById(`next-page-${containerId}`);
         const pageInfo = document.getElementById(`page-info-${containerId}`);
+        const searchInput = document.getElementById(`search-text-${containerId}`);
+        const searchButton = document.getElementById(`search-button-${containerId}`);
+        const searchResultsList = document.getElementById(`search-results-${containerId}`);
         let currentPage = 1;
         let totalPages = 1;
+        let pdfInstance;
 
         if (typeof pdfjsLib === 'undefined') {
             const script = document.createElement('script');
@@ -319,34 +417,70 @@ https://github.com/alex-shpak/hugo-book
         }
 
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
-        const pdf = await pdfjsLib.getDocument(pdfUrl).promise;
-        totalPages = pdf.numPages;
+        pdfInstance = await pdfjsLib.getDocument(pdfUrl).promise;
+        totalPages = pdfInstance.numPages;
 
         
-        function updatePage() {
-            iframe.src = `${pdfUrl}#page=${currentPage}`;
-            pageInfo.textContent = `Page ${currentPage} of ${totalPages}`;
-            prevButton.disabled = currentPage === 1;
-            nextButton.disabled = currentPage === totalPages;
+        function updatePage(page) {
+            iframe.src = `${pdfUrl}#page=${page}`;
+            pageInfo.textContent = `Page ${page} of ${totalPages}`;
+            prevButton.disabled = page === 1;
+            nextButton.disabled = page === totalPages;
         }
 
         
         prevButton.addEventListener('click', () => {
             if (currentPage > 1) {
                 currentPage--;
-                updatePage();
+                updatePage(currentPage);
             }
         });
 
         nextButton.addEventListener('click', () => {
             if (currentPage < totalPages) {
                 currentPage++;
-                updatePage();
+                updatePage(currentPage);
             }
         });
 
         
-        updatePage();
+        searchButton.addEventListener('click', async () => {
+            const searchText = searchInput.value.trim();
+            if (!searchText) return;
+
+            searchResultsList.innerHTML = ''; 
+            for (let i = 1; i <= totalPages; i++) {
+                const page = await pdfInstance.getPage(i);
+                const textContent = await page.getTextContent();
+                const textItems = textContent.items.map(item => item.str).join(" ");
+
+                if (textItems.toLowerCase().includes(searchText.toLowerCase())) {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `Page ${i}: ${textItems.substring(0, 100)}...`;
+                    listItem.style.cursor = 'pointer';
+                    listItem.style.padding = '10px';
+                    listItem.style.borderBottom = '1px solid #ccc';
+
+                    listItem.addEventListener('click', () => {
+                        currentPage = i;
+                        updatePage(currentPage);
+                    });
+
+                    searchResultsList.appendChild(listItem);
+                }
+            }
+
+            if (searchResultsList.childNodes.length === 0) {
+                const noResultsItem = document.createElement('li');
+                noResultsItem.textContent = 'No matches found.';
+                noResultsItem.style.padding = '10px';
+                noResultsItem.style.textAlign = 'center';
+                searchResultsList.appendChild(noResultsItem);
+            }
+        });
+
+        
+        updatePage(currentPage);
     }
 
     
