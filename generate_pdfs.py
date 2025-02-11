@@ -2,7 +2,6 @@
 import os
 
 IDX = 11
-IDX = 0
 
 import os
 from pypdf import PdfReader, PdfWriter
