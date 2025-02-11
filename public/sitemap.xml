@@ -2,26 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://clintonsteiner.github.io/resonances/appendices/</loc>
+    <loc>http://localhost:1313/resonances/appendices/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/book/</loc>
+    <loc>http://localhost:1313/resonances/book/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/categories/</loc>
+    <loc>http://localhost:1313/resonances/categories/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/tags/</loc>
+    <loc>http://localhost:1313/resonances/tags/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/unit_1/</loc>
+    <loc>http://localhost:1313/resonances/unit_1/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/unit_2/</loc>
+    <loc>http://localhost:1313/resonances/unit_2/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/unit_3/</loc>
+    <loc>http://localhost:1313/resonances/unit_3/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/unit_4/</loc>
+    <loc>http://localhost:1313/resonances/unit_4/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/unit_5/</loc>
+    <loc>http://localhost:1313/resonances/unit_5/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/unit_6/</loc>
+    <loc>http://localhost:1313/resonances/unit_6/</loc>
   </url><url>
-    <loc>https://clintonsteiner.github.io/resonances/</loc>
+    <loc>http://localhost:1313/resonances/</loc>
   </url>
 </urlset>

@@ -9,7 +9,7 @@ title: "Welcome"
 
 [Slow Source Download Resonances v7 PDF](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269)
 
-| Unit                 | Chapter                                                                  |  Download Link                                                                                                 |
+| Unit                 | Chapter                                                                  | Pdf Download Link                                                                                             |
 |----------------------|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | [Appdx.](appendices) | [instruments-of-the-orchestra](appendices/#instruments-of-the-orchestra) | [Instruments of the Orchestra](Appendices_Instruments_of_the_Orchestra.pdf)                                   |
 | [Appdx.](appendices) | [western-art-music](appendices/#western-art-music)                       | [Western Art Music](Appendices_Western_Art_Music.pdf)                                                         |
