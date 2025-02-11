@@ -1,0 +1,48 @@
+<div id="pdf-container" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+    <iframe id="pdf-frame" src="{{ .Get "src" }}" width="{{ .Get "width" | default "100%" }}" height="{{ .Get "height" | default "600px" }}" style="border: none;"></iframe>
+    <div style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+        <button onclick="prevPage()" style="padding: 5px 10px; cursor: pointer;">Previous</button>
+        <span>Page <span id="current-page">1</span> of <span id="total-pages">1</span></span>
+        <button onclick="nextPage()" style="padding: 5px 10px; cursor: pointer;">Next</button>
+    </div>
+</div>
+<script>
+    let currentPage = 1;
+    let totalPages = 1;
+    const pdfFrame = document.getElementById('pdf-frame');
+
+    document.addEventListener('DOMContentLoaded', () => {
+        pdfFrame.addEventListener('load', () => {
+            const pdfUrl = "{{ .Get "src" }}";
+            totalPages = getTotalPages(pdfUrl); // Replace this with logic to determine the total number of pages in the PDF
+            document.getElementById('total-pages').innerText = totalPages;
+        });
+    });
+
+    function updatePage() {
+        const pdfUrl = "{{ .Get "src" }}";
+        const updatedUrl = `${pdfUrl}#page=${currentPage}`;
+        pdfFrame.src = updatedUrl;
+        document.getElementById('current-page').innerText = currentPage;
+    }
+
+    function prevPage() {
+        if (currentPage > 1) {
+            currentPage--;
+            updatePage();
+        }
+    }
+
+    function nextPage() {
+        if (currentPage < totalPages) {
+            currentPage++;
+            updatePage();
+        }
+    }
+
+    // Placeholder for getting total pages - implement as needed.
+    function getTotalPages(url) {
+        return 10; // Replace this with actual logic if needed.
+    }
+</script>
+

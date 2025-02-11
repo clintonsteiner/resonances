@@ -1,5 +1,7 @@
 baseURL = 'https://clintonsteiner.github.io/resonances/'
 languageCode = 'en-us'
-title = 'Resonance textbook web hosting'
-theme = 'book'
+title = 'Resonance textbook fast hosting'
 
+theme = ["book"]
+enableInlineShortcodes = true
+ignoreLogs = ['warning-goldmark-raw-html']

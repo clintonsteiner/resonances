@@ -1,6 +1,6 @@
 {
-  "name": "Resonance textbook web hosting",
-  "short_name": "Resonance textbook web hosting",
+  "name": "Resonance textbook fast hosting",
+  "short_name": "Resonance textbook fast hosting",
   "start_url": "/resonances/",
   "scope": "/resonances/",
   "display": "standalone",
