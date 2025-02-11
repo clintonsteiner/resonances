@@ -21,6 +21,12 @@ jobs:
         with:
           hugo-version: 'latest'
 
+      - name: Turn off LFS
+        run: >-
+          git lfs uninstall;
+          rm -Rf .git;
+          rm .gitattributes;
+
       - name: Build site
         run: hugo build
 
