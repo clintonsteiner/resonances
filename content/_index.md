@@ -5,25 +5,48 @@ title: "Welcome"
 
 [Slow Source Download Resonances v7 PDF](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269)
 
+## Appendices
+
+[Instruments_of_the_Orchestra](Appendices_Instruments_of_the_Orchestra.pdf)
+[Western_Art_Music](Appendices_Western_Art_Music.pdf)
+[Definition_of_Terms](Appendices_Definition_of_Terms.pdf)
+
 ## Unit 1
 
-[Unit 1 Chapter 1 Music in Human Life](Unit1_Chapter1_Music_in_Human_Life.pdf)
+[Chapter 1 Music in Human Life](Unit1_Chapter1_Music_in_Human_Life.pdf)
 
-[Unit 1 Chapter 2 The Elements of Music](Unit1_Chapter2_The_Elements_of_Music.pdf)
+[Chapter 2 The Elements of Music](Unit1_Chapter2_The_Elements_of_Music.pdf)
 
 ## Unit 2
 
-[Unit 2 Chapter 3 Music and Characterization](Unit2_Chapter3_Music_and_Characterization.pdf)
+[Chapter 3 Music and Characterization](Unit2_Chapter3_Music_and_Characterization.pdf)
 
-[Unit 2 Chapter 4 Sung and Danced Drama](Unit2_Chapter4_Sung_and_Danced_Drama.pdf)
+[Chapter 4 Sung and Danced Drama](Unit2_Chapter4_Sung_and_Danced_Drama.pdf)
 
-[Unit 2 Chapter 5 Song](Unit2_Chapter5_Song.pdf)
+[Chapter 5 Song](Unit2_Chapter5_Song.pdf)
 
-[Unit 2 Chapter 6 Stories without Words Introduction](Unit2_Chapter6_Stories_without_Words_Introduction.pdf)
+[Chapter 6 Stories without Words Introduction](Unit2_Chapter6_Stories_without_Words_Introduction.pdf)
 
 ## Unit 3
 
-[Unit 3 Chapter 7 Listening at Public Concerts Introduction](Unit3_Chapter7_Listening_at_Public_Concerts_Introduction.pdf)
+[Chapter 7 Listening at Public Concerts Introduction](Unit3_Chapter7_Listening_at_Public_Concerts_Introduction.pdf)
 
-[Unit 3 Chapter 8 Listening at Home and at Court Introduction](Unit3_Chapter8_Listening_at_Home_and_at_Court_Introduction.pdf)
+[Chapter 8 Listening at Home and at Court Introduction](Unit3_Chapter8_Listening_at_Home_and_at_Court_Introduction.pdf)
+
+## Unit 4
+
+[Chapter 9_National_Identity.pdf](Unit4_Chapter9_National_Identity.pdf)
+
+[Chapter 10_Support_and_Protest](Unit4_Chapter10_Support_and_Protest.pdf)
+
+## Unit 5
+
+[Chapter 11_Music_for_Spiritual_Expression.pdf](Unit5_Chapter11_Music_for_Spiritual_Expression.pdf)
+
+[Chapter 12_Music_for_Moving.pdf](Unit5_Chapter12_Music_for_Moving.pdf)
+
+
+## Unit 6
+
+[Chapter 13_What_is_Good_Music.pdf](Unit6_Chapter13_What_is_Good_Music.pdf)
 

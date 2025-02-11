@@ -32,6 +32,14 @@ ranges = {
     'Unit2_Chapter6_Stories_without_Words_Introduction': (170, 212),
     'Unit3_Chapter7_Listening_at_Public_Concerts_Introduction': (213, 258),
     'Unit3_Chapter8_Listening_at_Home_and_at_Court_Introduction': (259, 306),
+    'Unit4_Chapter9_National_Identity': (307, 347),
+    'Unit4_Chapter10_Support_and_Protest': (348, 392),
+    'Unit5_Chapter11_Music_for_Spiritual_Expression': (393, 438),
+    'Unit5_Chapter12_Music_for_Moving': (439, 478),
+    'Unit6_Chapter13_What_is_Good_Music?': (480, 516),
+    'Appendices_Instruments_of_the_Orchestra': (517, 522),
+    'Appendices_Western_Art_Music': (523, 530),
+    'Appendices_Definition_of_Terms': (531, 552),
 }
 
 split_pdf(input_pdf, output_folder, ranges)
