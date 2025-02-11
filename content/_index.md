@@ -3,9 +3,7 @@ title: "Welcome"
 ---
 ## Source
 
-[Mirror Download Pt 1. Resonances Full PDF](resonances_pgs_1_through_306.pdf)
-
-[Mirror Download Pt 2. Resonances Full PDF](resonances_pgs_307_through_end.pdf)
+[Mirror Download Resonances Full PDF](resonance-v7.pdf)
 
 [Slow Source Download Resonances v7 PDF](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269)
 
