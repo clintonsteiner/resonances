@@ -1,5 +1,5 @@
 ---
-title: "Unit 2"
+title: "Unit 2: Music for Storytelling"
 ---
 
 ## Music and Characterization

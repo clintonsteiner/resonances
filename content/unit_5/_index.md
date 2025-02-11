@@ -1,5 +1,5 @@
 ---
-title: "Unit 5"
+title: "Unit 5: Functional Music"
 ---
 
 ## Music for Spiritual Expression

@@ -1,5 +1,5 @@
 ---
-title: "Unit 6"
+title: "Unit 6: Evaluating Music"
 ---
 
 ## What is Good Music

@@ -1,5 +1,5 @@
 ---
-title: "Unit 1"
+title: "Unit 1: Music as a Field of Practice and Study"
 ---
 
 ## Music in Human Life

@@ -1,5 +1,5 @@
 ---
-title: "Unit 3"
+title: "Unit 3: Music for Entertainment"
 ---
 
 ## Listening at Public Concerts Introduction

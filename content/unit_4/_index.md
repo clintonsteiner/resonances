@@ -1,5 +1,5 @@
 ---
-title: "Unit 4"
+title: "Unit 4: Music for Political Expression"
 ---
 
 ## National Identity
