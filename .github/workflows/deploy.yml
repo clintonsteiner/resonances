@@ -1,3 +1,4 @@
+---
 name: Deploy Hugo Site
 
 on:
@@ -12,8 +13,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-          with:
-            lfs: 'true'
+        with:
+          lfs: 'true'
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -34,4 +35,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-
