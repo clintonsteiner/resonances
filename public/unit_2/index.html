@@ -25,6 +25,9 @@
         
             Next Page
         
+        
+            Download PDF
+        
     
 
     
@@ -63,6 +66,9 @@
         
         
             Next Page
+        
+        
+            Download PDF
         
     
 
@@ -103,6 +109,9 @@
         
             Next Page
         
+        
+            Download PDF
+        
     
 
     
@@ -142,6 +151,9 @@
         
             Next Page
         
+        
+            Download PDF
+        
     
 
     
@@ -162,7 +174,7 @@
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://clintonsteiner.github.io/resonances/unit_2/">
   <meta property="og:site_name" content="Resonance textbook fast hosting">
   <meta property="og:title" content="Unit 2: Music for Storytelling">
-  <meta property="og:description" content="Music and Characterization # Previous Page Page 1 Next Page Search Sung and Danced Drama # Previous Page Page 1 Next Page Search Song # Previous Page Page 1 Next Page Search Stories without Words Introduction # Previous Page Page 1 Next Page Search">
+  <meta property="og:description" content="Music and Characterization # Previous Page Page 1 Next Page Download PDF Search Sung and Danced Drama # Previous Page Page 1 Next Page Download PDF Search Song # Previous Page Page 1 Next Page Download PDF Search Stories without Words Introduction # Previous Page Page 1 Next Page Download PDF Search">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 <title>Unit 2: Music for Storytelling | Resonance textbook fast hosting</title>
@@ -171,7 +183,7 @@
 <link rel="canonical" href="https://clintonsteiner.github.io/resonances/unit_2/">
 <link rel="stylesheet" href="/resonances/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
   <script defer src="/resonances/fuse.min.js"></script>
-  <script defer src="/resonances/en.search.min.ff15ad97f414fae49c47abcb2c893ca612bdc26ec4bde8acf79575532156e0b3.js" integrity="sha256-/xWtl/QU&#43;uScR6vLLIk8phK9wm7Eveis95V1UyFW4LM=" crossorigin="anonymous"></script>
+  <script defer src="/resonances/en.search.min.a09fc6d0529fc5bec643cf0d521143ef5c7b5e2734304a068b1887dfe3e2064b.js" integrity="sha256-oJ/G0FKfxb7GQ88NUhFD71x7Xic0MEoGixiH3&#43;PiBks=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://clintonsteiner.github.io/resonances/unit_2/index.xml" title="Resonance textbook fast hosting" />
 <!--
 Made with Book Theme
@@ -311,6 +323,11 @@ https://github.com/alex-shpak/hugo-book
             style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
             Next Page
         </button>
+        <button 
+            id="download-button-1" 
+            style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
+            Download PDF
+        </button>
     </div>
 
     
@@ -340,6 +357,7 @@ https://github.com/alex-shpak/hugo-book
         const searchInput = document.getElementById(`search-text-${containerId}`);
         const searchButton = document.getElementById(`search-button-${containerId}`);
         const searchResultsList = document.getElementById(`search-results-${containerId}`);
+        const downloadButton = document.getElementById(`download-button-${containerId}`);
         let currentPage = 1;
         let totalPages = 1;
         let pdfInstance;
@@ -412,6 +430,13 @@ https://github.com/alex-shpak/hugo-book
                 noResultsItem.style.textAlign = 'center';
                 searchResultsList.appendChild(noResultsItem);
             }
+        });
+        
+        downloadButton.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = pdfUrl.split('/').pop();
+            link.click();
         });
 
         
@@ -456,6 +481,11 @@ https://github.com/alex-shpak/hugo-book
             style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
             Next Page
         </button>
+        <button 
+            id="download-button-2" 
+            style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
+            Download PDF
+        </button>
     </div>
 
     
@@ -485,6 +515,7 @@ https://github.com/alex-shpak/hugo-book
         const searchInput = document.getElementById(`search-text-${containerId}`);
         const searchButton = document.getElementById(`search-button-${containerId}`);
         const searchResultsList = document.getElementById(`search-results-${containerId}`);
+        const downloadButton = document.getElementById(`download-button-${containerId}`);
         let currentPage = 1;
         let totalPages = 1;
         let pdfInstance;
@@ -557,6 +588,13 @@ https://github.com/alex-shpak/hugo-book
                 noResultsItem.style.textAlign = 'center';
                 searchResultsList.appendChild(noResultsItem);
             }
+        });
+        
+        downloadButton.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = pdfUrl.split('/').pop();
+            link.click();
         });
 
         
@@ -601,6 +639,11 @@ https://github.com/alex-shpak/hugo-book
             style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
             Next Page
         </button>
+        <button 
+            id="download-button-3" 
+            style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
+            Download PDF
+        </button>
     </div>
 
     
@@ -630,6 +673,7 @@ https://github.com/alex-shpak/hugo-book
         const searchInput = document.getElementById(`search-text-${containerId}`);
         const searchButton = document.getElementById(`search-button-${containerId}`);
         const searchResultsList = document.getElementById(`search-results-${containerId}`);
+        const downloadButton = document.getElementById(`download-button-${containerId}`);
         let currentPage = 1;
         let totalPages = 1;
         let pdfInstance;
@@ -702,6 +746,13 @@ https://github.com/alex-shpak/hugo-book
                 noResultsItem.style.textAlign = 'center';
                 searchResultsList.appendChild(noResultsItem);
             }
+        });
+        
+        downloadButton.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = pdfUrl.split('/').pop();
+            link.click();
         });
 
         
@@ -746,6 +797,11 @@ https://github.com/alex-shpak/hugo-book
             style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
             Next Page
         </button>
+        <button 
+            id="download-button-4" 
+            style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
+            Download PDF
+        </button>
     </div>
 
     
@@ -775,6 +831,7 @@ https://github.com/alex-shpak/hugo-book
         const searchInput = document.getElementById(`search-text-${containerId}`);
         const searchButton = document.getElementById(`search-button-${containerId}`);
         const searchResultsList = document.getElementById(`search-results-${containerId}`);
+        const downloadButton = document.getElementById(`download-button-${containerId}`);
         let currentPage = 1;
         let totalPages = 1;
         let pdfInstance;
@@ -847,6 +904,13 @@ https://github.com/alex-shpak/hugo-book
                 noResultsItem.style.textAlign = 'center';
                 searchResultsList.appendChild(noResultsItem);
             }
+        });
+        
+        downloadButton.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = pdfUrl.split('/').pop();
+            link.click();
         });
 
         

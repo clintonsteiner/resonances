@@ -27,6 +27,11 @@
             style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
             Next Page
         </button>
+        <button 
+            id="download-button-{{ .Get "id" }}" 
+            style="padding: 10px 20px; font-size: 16px; cursor: pointer; border: 1px solid #ccc; border-radius: 4px; background-color: #f0f0f0; color: #333; font-weight: bold;">
+            Download PDF
+        </button>
     </div>
 
     <!-- Search and Results -->
@@ -56,6 +61,7 @@
         const searchInput = document.getElementById(`search-text-${containerId}`);
         const searchButton = document.getElementById(`search-button-${containerId}`);
         const searchResultsList = document.getElementById(`search-results-${containerId}`);
+        const downloadButton = document.getElementById(`download-button-${containerId}`);
         let currentPage = 1;
         let totalPages = 1;
         let pdfInstance;
@@ -128,6 +134,13 @@
                 noResultsItem.style.textAlign = 'center';
                 searchResultsList.appendChild(noResultsItem);
             }
+        });
+        // Download handler
+        downloadButton.addEventListener('click', () => {
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = pdfUrl.split('/').pop();
+            link.click();
         });
 
         // Initialize
