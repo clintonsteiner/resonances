@@ -1,7 +1,7 @@
 ---
 title: "Welcome"
 ---
-[Mirror Download Pt 1. Resonances v7 PDF](resonances_pgs_1_through_306.pd)
+[Mirror Download Pt 1. Resonances v7 PDF](resonances_pgs_1_through_306.pdf)
 
 [Mirror Download Pt 2. Resonances v7 PDF](resonances_pgs_307_through_end.pdf)
 
