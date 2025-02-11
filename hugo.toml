@@ -2,8 +2,4 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'book'
-[[menu.main]]
-name = "Textbook"
-url = "/pdf/"
-weight = 1
 
