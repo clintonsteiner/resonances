@@ -25,7 +25,7 @@ jobs:
           hugo-version: 'latest'
 
       - name: Build site
-        run: hugo --minify -d public
+        run: hugo build clean -d public
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
