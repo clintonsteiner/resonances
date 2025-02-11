@@ -41,18 +41,18 @@ title: "Welcome"
 
 ## Unit 4
 
-[Chapter 9_National_Identity.pdf](Unit4_Chapter9_National_Identity.pdf)
+[Chapter 9 National Identity.pdf](Unit4_Chapter9_National_Identity.pdf)
 
-[Chapter 10_Support_and_Protest](Unit4_Chapter10_Support_and_Protest.pdf)
+[Chapter 10 Support and Protest](Unit4_Chapter10_Support_and_Protest.pdf)
 
 ## Unit 5
 
-[Chapter 11_Music_for_Spiritual_Expression.pdf](Unit5_Chapter11_Music_for_Spiritual_Expression.pdf)
+[Chapter 11 Music for Spiritual Expression.pdf](Unit5_Chapter11_Music_for_Spiritual_Expression.pdf)
 
-[Chapter 12_Music_for_Moving.pdf](Unit5_Chapter12_Music_for_Moving.pdf)
+[Chapter 12 Music for Moving.pdf](Unit5_Chapter12_Music_for_Moving.pdf)
 
 
 ## Unit 6
 
-[Chapter 13_What_is_Good_Music.pdf](Unit6_Chapter13_What_is_Good_Music.pdf)
+[Chapter 13 What is Good Music.pdf](Unit6_Chapter13_What_is_Good_Music.pdf)
 
