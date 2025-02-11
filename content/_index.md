@@ -1,7 +1,8 @@
 ---
 title: "Welcome"
 ---
-### Full PDF
+
+## Full PDF
 | View         | Download                     | Slow Source                                                                                                 |
 |--------------|------------------------------|-------------------------------------------------------------------------------------------------------------|
 | [View](book) | [Download](resonance-v7.pdf) | [Download from source - slow](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269) |
