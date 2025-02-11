@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome on My New Hugo Site</title>
-    <link>https://example.org/</link>
-    <description>Recent content in Welcome on My New Hugo Site</description>
+    <title>Welcome on Resonance textbook web hosting</title>
+    <link>https://clintonsteiner.github.io/resonances/</link>
+    <description>Recent content in Welcome on Resonance textbook web hosting</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://clintonsteiner.github.io/resonances/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

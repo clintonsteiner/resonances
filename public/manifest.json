@@ -1,14 +1,14 @@
 {
-  "name": "My New Hugo Site",
-  "short_name": "My New Hugo Site",
-  "start_url": "/",
-  "scope": "/",
+  "name": "Resonance textbook web hosting",
+  "short_name": "Resonance textbook web hosting",
+  "start_url": "/resonances/",
+  "scope": "/resonances/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/resonances/favicon.svg",
       "sizes": "512x512"
     }
   ]
