@@ -8,7 +8,9 @@ title: "Welcome"
 ## Appendices
 
 [Instruments_of_the_Orchestra](Appendices_Instruments_of_the_Orchestra.pdf)
+
 [Western_Art_Music](Appendices_Western_Art_Music.pdf)
+
 [Definition_of_Terms](Appendices_Definition_of_Terms.pdf)
 
 ## Unit 1
