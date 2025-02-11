@@ -1,15 +1,9 @@
 ---
 title: "Welcome"
 ---
-## Source
+## Chapter Links
 
-[Download Resonances Full PDF](resonance-v7.pdf)
-
-[View Full PDF in Webpage](book)
-
-[Download PDF from Source - slow](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269)
-
-| Unit                                                | Chapter                                                                                               | Pdf Download Link                                                                                             |
+| Unit                                                | Read Chapters                                                                                         | Pdf Download Link                                                                                             |
 |-----------------------------------------------------|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | [Appdx.](appendices)                                | [Instruments of the Orchestra](appendices/#instruments-of-the-orchestra)                              | [Instruments of the Orchestra](Appendices_Instruments_of_the_Orchestra.pdf)                                   |
 | [Appdx.](appendices)                                | [Western Art Music](appendices/#western-art-music)                                                    | [Western Art Music](Appendices_Western_Art_Music.pdf)                                                         |
@@ -30,3 +24,8 @@ title: "Welcome"
 |                                                     |                                                                                                       |                                                                                                               |
 
 
+## Full PDF
+
+- [Download](resonance-v7.pdf)
+- [View](book)
+- [Download from source - slow](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269)
