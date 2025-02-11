@@ -3,11 +3,11 @@ title: "Welcome"
 ---
 ## Source
 
-[Mirror Download Resonances Full PDF](resonance-v7.pdf)
+[Download Resonances Full PDF](resonance-v7.pdf)
 
-[Rendered full pdf](book)
+[View Full PDF in Webpage](book)
 
-[Slow Source Download Resonances v7 PDF](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269)
+[Download PDF from Source - slow](https://web.ung.edu/media/university-press/Resonances-v7.pdf?t=1739240426269)
 
 | Unit                                                | Chapter                                                                                               | Pdf Download Link                                                                                             |
 |-----------------------------------------------------|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
