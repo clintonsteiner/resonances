@@ -1,0 +1,15 @@
+{
+  "name": "Resonance - Engaging Music in Its Cultural Context",
+  "short_name": "Resonance - Engaging Music in Its Cultural Context",
+  "start_url": "/resonances/",
+  "scope": "/resonances/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/resonances/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
