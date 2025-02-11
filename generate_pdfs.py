@@ -37,7 +37,7 @@ ranges = {
     'Unit4_Chapter10_Support_and_Protest': (348, 392),
     'Unit5_Chapter11_Music_for_Spiritual_Expression': (393, 438),
     'Unit5_Chapter12_Music_for_Moving': (439, 478),
-    'Unit6_Chapter13_What_is_Good_Music?': (480, 516),
+    'Unit6_Chapter13_What_is_Good_Music': (480, 516),
     'Appendices_Instruments_of_the_Orchestra': (517, 522),
     'Appendices_Western_Art_Music': (523, 530),
     'Appendices_Definition_of_Terms': (531, 552),
