@@ -2,6 +2,7 @@
 import os
 
 IDX = 11
+IDX = 0
 
 import os
 from pypdf import PdfReader, PdfWriter
@@ -41,5 +42,6 @@ ranges = {
     'Appendices_Western_Art_Music': (523, 530),
     'Appendices_Definition_of_Terms': (531, 552),
 }
+ranges = {'resonances_pgs_1_through_306': (1, 317), '2': (318, 563)}
 
 split_pdf(input_pdf, output_folder, ranges)
